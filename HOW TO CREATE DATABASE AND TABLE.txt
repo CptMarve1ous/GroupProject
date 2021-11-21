@@ -1,0 +1,7 @@
+HOW TO SET UP DATABASE AND TABLE FOR BOOKING AND SIGN UP
+---------------------------------------------------------
+1. Type this "localhost/GroupProject/mysql_connect2.php" in the browser URL to create a database for booking
+
+2. Then type this "localhost/GroupProject/create_bookingtable.php" in the browser URL to create a table for booking.
+
+3. Then type this "http://localhost/GroupProject/create_user_table.php" in the browser URL to create a table for signing up

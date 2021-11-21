@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="shortcut icon" href="movielogo.png"/>
+        <style>
+
+            body{
+                background-color: #DCDCDC;
+            }
+
+
+            body {font-family: Arial, Helvetica, sans-serif;}
+            form {border: 3px solid #f1f1f1;}
+
+            input[type=text], input[type=password] , input[type=email] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            button {
+                background-color: #04AA6D;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+            }
+
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+
+            img.avatar {
+                width: 40%;
+                border-radius: 50%;
+            }
+
+            .container {
+                padding: 16px;
+            }
+
+            span.psw {
+                float: right;
+                padding-top: 16px;
+            }
+            span a{
+                color:red;
+                float: right;
+            }
+
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+                span.psw {
+                    display: block;
+                    float: none;
+                }
+
+            }
+        </style>
+    <body>
+        <nav>
+            <a href="userporfile.html">
+                <img src="images/profilelogo.png" style="height: 50px"/>
+            </a>
+
+            <!--menu-->
+            <ul class="menu">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="Comedy.html">Comedy</a></li>
+                <li><a href="Horror.html">Horror</a></li>
+                <li><a href="moviecontact.html">Contact Us</a></li>
+                <li><a href="moviebooking.html">Booking</a></li>
+                <li><a href="view_bookings.php">View Bookings</a></li>
+            </ul>
+
+            <div class="search">
+                <input type="text" placeholder="Search for Movies"/>
+            </div>
+        </nav>
+        <br><br><br>
+
+    <center><h2>Edit Profile</h2></center>
+
+    <form action="userprofile.php" method="post">
+
+        <div class="container">
+
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="user_name" required>
+
+            <label for="psw"><b>Old Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <label for="psw"><b>New Password</b></label>
+            <input type="password" placeholder="Enter New Password" name="new_pass" required>
+
+            <label for="psw"><b>Re-Type New Password</b></label>
+            <input type="password" placeholder="Re-Type New Password" name="re_pass" required>
+
+
+            <button type="submit">Save</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <a href="homepage.html">Cancel</a>
+            <span><a href="login.php">Log out</a></span>
+
+        </div>
+    </form>
+
+</body>
+</html>

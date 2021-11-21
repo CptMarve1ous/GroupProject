@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Booking |</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="shortcut icon" href="movielogo.png"/>
+        <style>
+            body{
+                background-color: #DCDCDC;
+            }
+            
+            .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 100px;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .col-10 {
+                float: left;
+                width: 10%;
+                margin-top: 6px;
+            }
+
+            .col-mid {
+                float: left;
+                width: 10%;
+                margin-top: 6px;
+            }
+
+            .col-80 {
+                float: left;
+                width: 80%;
+                margin-top: 6px;
+            }
+
+            input[type=submit] {
+                background-color: #ccc;
+                color: #111;
+                padding: 12px 20px;
+                float: left;
+                border: none;
+            }
+
+            input[type=submit]:hover {
+                background-color: #585858;
+            }
+
+            form {
+                display: inline-block;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <nav>
+        <!corner logo>
+        <a href="userporfile.html">
+            <img src="images/profilelogo.png" style="height: 50px"/>
+        </a>
+        
+        <!--menu-->
+        <ul class="menu">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Comedy.html">Comedy</a></li>
+            <li><a href="Horror.html">Horror</a></li>
+            <li><a href="moviecontact.html">Contact Us</a></li>
+            <li><a href="moviebooking.html">Booking</a></li>
+            <li><a href="view_bookings.php">View Bookings</a></li>
+        </ul>
+        
+        <!--searchbar-->
+        <div class="search">
+            <input type="text" placeholder="Search for Movies"/>
+        </div>
+    </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <center><img src="images/takenking.jpg" width="136" height="207" alt="unknown_logo"/></center>
+                </div>
+                <div class="col-mid"></div>
+                <div class="col-80">
+                    <h2>Destiny: The Taken King</h2>
+                    <p style="color: green">110 Minutes</p>
+                    <p>
+                        The expansion's story centers around Oryx, the God-King of the Hive, and his quest for revenge, after the Guardians had slain his son Crota. He has brought a massive Dreadnaught into the system and has launched an invasion using his personal army, the Taken, members of the other races warped by the power of the Darkness into Oryx's slaves. The game's story also expands upon the Darkness, the Hive, the Cabal, and the Fallen House of Wolves.
+                    </p>
+                    <br>
+
+                    <span style="font-size: 18px; display: flex; align-items: center">Time Selection:</span>
+                    <form action="moviebooking.php" method="post">
+                        <input type="submit" name="time" value="13:00"/>
+                        <input type="submit" name="time" value="15:45"/>
+                        <input type="submit" name="time" value="19:30"/>
+                    </form>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="row">
+                <div class="col-10">
+                    <center><img src="images/curseofosiris.jpg" width="136" height="207" alt="unknown_logo"/></center>
+                </div>
+                <div class="col-mid"></div>
+                <div class="col-80">
+                    <h2>Curse of Osiris</h2>
+                    <p style="color: green">125 Minutes</p>
+                    <p>
+                        Curse of Osiris takes place on Mercury and follows the Guardian's efforts to rescue Osiris from the Vex in order to avert a dark future. The expansion's plot also focuses on the relationship between Osiris and his disciple, Ikora Rey. 
+                    </p>
+                    <br>
+
+                    <span style="font-size: 18px; display: flex; align-items: center">Time Selection:</span>
+                    <form action="moviebooking.php" method="post">
+                        <input type="submit" name="time" value="13:00"/>
+                        <input type="submit" name="time" value="15:45"/>
+                        <input type="submit" name="time" value="19:30"/>
+                    </form>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="row">
+                <div class="col-10">
+                    <center><img src="images/thedarkbelow.jpg" width="136" height="207" alt="unknown_logo"/></center>
+                </div>
+                <div class="col-mid"></div>
+                <div class="col-80">
+                    <h2>Destiny: The Dark Below</h2>
+                    <p style="color: green">90 Minutes</p>
+                    <p>
+                        The Dark Below takes place in the Cosmodrome and within the Hellmouth, and involves stopping the Hive god Crota from being resurrected and invading Earth. Players are guided by Eris Morn, a new Tower vendor with a grudge against Crota.
+                    </p>
+                    <br>
+
+                    <span style="font-size: 18px; display: flex; align-items: center">Time Selection:</span>
+                    <form action="moviebooking.php" method="post">
+                        <input type="submit" name="time" value="13:00"/>
+                        <input type="submit" name="time" value="15:45"/>
+                        <input type="submit" name="time" value="19:30"/>
+                    </form>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="row">
+                <div class="col-10">
+                    <center><img src="images/shadowkeep.jpeg" width="136" height="207" alt="unknown_logo"/></center>
+                </div>
+                <div class="col-mid"></div>
+                <div class="col-80">
+                    <h2>ShadowKeep</h2>
+                    <p style="color: green">160 Minutes</p>
+                    <p>
+                        Shadowkeep focuses on Eris Morn, who had departed from the Tower and remained absent since the events of the Red War. Following the events of Season of Opulence, the Guardian is summoned to the Moon by Commander Zavala in response to a disturbance originating from a massive citadel recently erected by the Hive near the Hellmouth called the Scarlet Keep. As the Guardian makes their way to the keep, Ikora Rey contacts the Guardian and reveals that the disturbance was caused by Eris Morn, and asks them to find her. The Guardian enters the Scarlet Keep and descends to the caverns below in search for Eris
+                    </p>
+                    <br>
+
+                    <span style="font-size: 18px; display: flex; align-items: center">Time Selection:</span>
+                    <form action="moviebooking.php" method="post">
+                        <input type="submit" name="time" value="13:00"/>
+                        <input type="submit" name="time" value="15:45"/>
+                        <input type="submit" name="time" value="19:30"/>
+                    </form>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="row">
+                <div class="col-10">
+                    <center><img src="images/forsaken.jpg" width="136" height="207" alt="unknown_logo"/></center>
+                </div>
+                <div class="col-mid"></div>
+                <div class="col-80">
+                    <h2>Forsaken</h2>
+                    <p style="color: green">120 Minutes</p>
+                    <p>
+                        The Reef has fallen to lawlessness, and now the most-wanted criminals in the galaxy - the Barons & Uldren Sov - have organized a jailbreak at the Prison of Elders. You and Cayde-6 have been sent in to bring law and order back to the embattled facility, but things do not go to plan. Facing insurmountable odds, Cayde-6 ends up paying the ultimate price. Beyond the Vanguard’s authority, you’ll venture into the Reef alone and take justice into your own hands. Explore new regions, awaken new powers, earn a wealth of new weapons, and uncover lost Awoken secrets. The hunt is on.
+                    </p>
+                    <br>
+
+                    <span style="font-size: 18px; display: flex; align-items: center">Time Selection:</span>
+                    <form action="moviebooking.php" method="post">
+                        <input type="submit" name="time" value="13:00"/>
+                        <input type="submit" name="time" value="15:45"/>
+                        <input type="submit" name="time" value="19:30"/>
+                    </form>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="row">
+                <div class="col-10">
+                    <center><img src="images/beyondlight.jpeg" width="136" height="207" alt="unknown_logo"/></center>
+                </div>
+                <div class="col-mid"></div>
+                <div class="col-80">
+                    <h2>Beyond Light</h2>
+                    <p style="color: green">140 Minutes</p>
+                    <p>
+                        Beyond Light focuses on Eramis the Shipstealer, a former Baroness of the House of Devils, now known as the Kell of Darkness, who plans to use the power of the Darkness to save her people and take revenge on the Traveler back on Earth, as she and many Fallen believe that the Traveler had abandoned them before the Golden Age of humanity. 
+                    </p>
+                    <br>
+
+                    <span style="font-size: 18px; display: flex; align-items: center">Time Selection:</span>
+                    <form action="moviebooking.php" method="post">
+                        <input type="submit" name="time" value="13:00"/>
+                        <input type="submit" name="time" value="15:45"/>
+                        <input type="submit" name="time" value="19:30"/>
+                    </form>
+                </div>
+            </div>
+            
+            <br><br>
+            
+            <div class="row">
+                <div class="col-10">
+                    <center><img src="images/riseofiron.jpg" width="136" height="207" alt="unknown_logo"/></center>
+                </div>
+                <div class="col-mid"></div>
+                <div class="col-80">
+                    <h2>Destiny: Rise of Iron</h2>
+                    <p style="color: green">140 Minutes</p>
+                    <p>
+                        The story follows Lord Saladin, a former Iron Lord as he gathers a new generation of Iron Lords to defeat the Fallen Devil Splicers who have recently rediscovered a Golden Age self-regenerating nano-technology called SIVA, and are using it to transform themselves into cyborgs.
+                    </p>
+                    <br>
+
+                    <span style="font-size: 18px; display: flex; align-items: center">Time Selection:</span>
+                    <form action="moviebooking.php" method="post">
+                        <input type="submit" name="time" value="13:00"/>
+                        <input type="submit" name="time" value="15:45"/>
+                        <input type="submit" name="time" value="19:30"/>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        
+        <footer>
+            <p>Group 3 Project</p>
+        </footer>
+        
+    </body>
+</html>
